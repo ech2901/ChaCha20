@@ -2,7 +2,7 @@
 ChaCha20 stream cipher implementation
 To install the current release:
 ```
-$ pip install tensorflow
+$ pip install ChaCha20
 ```
 
 How to use the ChaCha20 stream cipher:

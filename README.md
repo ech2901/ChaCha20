@@ -8,8 +8,8 @@ $ pip install ChaCha20
 How to use the ChaCha20 stream cipher:
 ```
 from ChaCha20 import ChaChaStream
-key = bytes(32)  # key can be any byte object with 32 bytes of data
-nonce = bytes(12)  # nonce can be any byte object with 12 bytes of data
+key = bytes(32)  # key can be any byte object. Objects with more than 32 bytes will  be truncated
+nonce = bytes(12)  # nonce can be any byte object. Objects with more than 12 bytes will  be truncated
 
 stream = ChaChaStream(key, nonce)
 

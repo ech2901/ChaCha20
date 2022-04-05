@@ -3,8 +3,9 @@ from ChaCha20.Block import Block
 
 class ChaChaStream(object):
     def __init__(self, key: bytes, nonce: bytes):
-        self.key = key
-        self.nonce = nonce
+
+        self.key = bytes(32-len(key)) + key[:32]
+        self.nonce = bytes(12-len(nonce)) + nonce[0:12]
         self.counter = 0
         self.stream = 0
         self.block = None

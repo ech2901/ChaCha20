@@ -1,4 +1,4 @@
-from Block import Block, Long
+from ChaCha20.Block import Block
 
 
 class ChaChaStream(object):
